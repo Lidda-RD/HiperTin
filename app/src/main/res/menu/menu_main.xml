@@ -1,0 +1,63 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.moisesvargas.hipertin.MainActivity"
+    android:iconTint="@color/colorAccent"
+    android:iconTintMode="add"
+    >
+    <item
+        android:id="@+id/itTodos"
+        android:icon="@drawable/sincronizar"
+        android:iconTint="@color/colorAccent"
+        android:title="Todos" />
+    <item
+        android:id="@+id/itLunes"
+        android:icon="@drawable/sincronizar"
+        android:title="Lunes"         android:iconTint="@color/colorAccent"
+        />
+    <item
+        android:id="@+id/itMartes"
+        android:foregroundTint="@color/colorAccent"
+        android:icon="@drawable/sincronizar"
+        android:title="Martes" />
+    <item
+        android:id="@+id/itMiercoles"
+        android:icon="@drawable/sincronizar"
+        android:iconTint="@color/colorAccent"
+        android:title="Miercoles" />
+    <item
+        android:id="@+id/itJueves"
+        android:icon="@drawable/sincronizar"
+        android:iconTint="@color/colorAccent"
+        android:title="Jueves" />
+    <item
+        android:id="@+id/itViernes"
+        android:icon="@drawable/sincronizar"
+        android:iconTint="@color/colorAccent"
+        android:title="Viernes" />
+    <item
+        android:id="@+id/itSabado"
+        android:icon="@drawable/sincronizar"
+        android:iconTint="@color/colorAccent"
+        android:title="Sabado" />
+    <item
+        android:id="@+id/itDomingo"
+        android:icon="@drawable/sincronizar"
+        android:iconTint="@color/colorAccent"
+        android:title="Domingo" />
+    <item
+        android:id="@+id/itSincronizar"
+        android:icon="@drawable/sincronizar"
+        android:iconTint="@color/colorAccent"
+        android:title="Sincronizar" />
+    <item
+        android:id="@+id/menuSearch"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:title="Search"
+        android:iconTint="@color/colorAccent"
+        android:iconTintMode="add"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="always" />
+
+
+</menu>

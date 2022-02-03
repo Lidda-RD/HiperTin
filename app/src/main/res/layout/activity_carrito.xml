@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CarritoActivity">
+
+    <TextView
+        android:id="@+id/tvBalanceCarrito"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/lato"
+        android:textColor="#008B00"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <TextView
+        android:id="@+id/tvlimiteCreditoCarrito"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_weight="1"
+        android:textColor="#3b3b3b"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <TextView
+        android:id="@+id/tvSectorCarrito"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_weight="1"
+        android:textColor="#3b3b3b"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvnombreClienteCarrito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_weight="1"
+        android:text="Nombre"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/tvcuentaCarrito"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvcuentaCarrito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_weight="1"
+        android:text="Cuenta"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvdireccionClienteCarrito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_weight="1"
+        android:text="Direccion"
+        android:textColor="#3b3b3b"
+        android:textSize="10sp"
+        app:layout_constraintTop_toBottomOf="@+id/tvContactoCarrito"
+        tools:layout_editor_absoluteX="4dp" />
+
+    <TextView
+        android:id="@+id/tvlimiteCredito3"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_weight="1"
+        android:textColor="#3b3b3b"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSectorCliente2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textColor="#3b3b3b"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvnombreCliente" />
+
+    <TextView
+        android:id="@+id/tvBalance2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:textColor="#3b3b3b"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/tvTelefonoCarrito"
+        android:layout_width="wrap_content"
+        android:layout_height="13dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_weight="1"
+        android:text="Telefono"
+        android:textColor="#3b3b3b"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvdireccionClienteCarrito"
+        tools:text="Telefono" />
+
+    <TextView
+        android:id="@+id/rty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:fontFamily="@font/lato"
+        android:text="Balance: "
+        android:textColor="#008B00"
+        android:textSize="12sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/tvBalanceCarrito"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="13dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:text="Limite Credito:"
+        android:textColor="#3b3b3b"
+        android:textSize="10sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/tvlimiteCreditoCarrito"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:text="Ciudad:"
+        android:textColor="#3b3b3b"
+        android:textSize="10sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/tvSectorCarrito"
+        app:layout_constraintTop_toBottomOf="@+id/tvnumerodePedidoCarrito" />
+
+    <TextView
+        android:id="@+id/tvvendedorCliente2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:visibility="gone"
+        tools:layout_editor_absoluteX="78dp"
+        tools:layout_editor_absoluteY="30dp" />
+
+    <TextView
+        android:id="@+id/tvContactoCarrito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Contacto"
+        android:textColor="@android:color/black"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@+id/tvcuentaCarrito"
+        tools:layout_editor_absoluteX="4dp" />
+
+    <TextView
+        android:id="@+id/tvdata2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        tools:layout_editor_absoluteX="142dp"
+        tools:layout_editor_absoluteY="43dp" />
+
+    <TextView
+        android:id="@+id/tvrowCarritoCodigo5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:fontFamily="@font/lato"
+        android:text="Importe"
+        android:textColor="#434343"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tvrowCarritoCodigo3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="185dp"
+        android:layout_marginLeft="185dp"
+        android:layout_marginBottom="2dp"
+        android:fontFamily="@font/lato"
+        android:text="Precio"
+        android:textColor="#434343"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvrowCarritoCantidad2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginBottom="2dp"
+        android:fontFamily="@font/lato"
+        android:text="Cantidad"
+        android:textColor="#434343"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/Codigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="2dp"
+        android:layout_toStartOf="@+id/tvrowCarritoPrecio"
+        android:layout_toLeftOf="@+id/tvrowCarritoPrecio"
+        android:fontFamily="@font/lato"
+        android:text="Articulo"
+        android:textColor="#434343"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="#f3f3f3"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/tvrowCarritoCodigo3"
+        tools:layout_editor_absoluteX="1dp">
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvimporteCarrito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:foregroundGravity="bottom"
+        android:gravity="bottom"
+        android:text="Importe"
+        android:textColor="#000000"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lstCarrito" />
+
+    <TextView
+        android:id="@+id/tvitbis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="58dp"
+        android:foregroundGravity="bottom"
+        android:gravity="bottom"
+        android:text="Itbis"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tvnumerodePedidoCarrito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/lato"
+        android:text="Numero de pedido"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/navigation"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:id="@+id/edtDescuentoCarrito"
+            android:layout_width="112dp"
+            android:layout_height="44dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Desc. %"
+            android:inputType="number"
+            android:maxLength="2"
+            android:visibility="gone"
+            app:layout_constraintEnd_toStartOf="@+id/tvimporteCarrito"
+            app:layout_constraintStart_toEndOf="@+id/tvitbis"
+            app:layout_constraintTop_toBottomOf="@+id/lstCarrito" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <ListView
+        android:id="@+id/lstCarrito"
+        android:layout_width="match_parent"
+        android:layout_height="362dp"
+        android:layout_marginBottom="8dp"
+        android:background="#f7f7f7"
+        android:foregroundGravity="bottom"
+        app:layout_constraintBottom_toTopOf="@+id/tvitbis"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="4dp"
+        android:layout_marginBottom="4dp"
+        android:background="#f3f3f3"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/lstCarrito"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </LinearLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        app:itemIconTint="@color/colorPrimary"
+        app:itemTextColor="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/navigation" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:fontFamily="@font/lato"
+        android:text="Pedido:"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/tvnumerodePedidoCarrito"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

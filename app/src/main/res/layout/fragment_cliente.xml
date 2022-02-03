@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cliente">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/txtCuenta"
+            android:layout_width="wrap_content"
+            android:layout_height="41dp"
+            android:ems="10"
+            android:hint="Cuenta"
+            android:inputType="textPersonName"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtNombre" />
+
+        <EditText
+            android:id="@+id/txtNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="41dp"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="Nombre"
+            android:inputType="textPersonName"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lstCliente" />
+
+        <EditText
+            android:id="@+id/txtTelefono"
+            android:layout_width="wrap_content"
+            android:layout_height="41dp"
+            android:ems="10"
+            android:hint="Telefono"
+            android:inputType="textPersonName"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtVendedor" />
+
+        <EditText
+            android:id="@+id/txtDireccion"
+            android:layout_width="wrap_content"
+            android:layout_height="41dp"
+            android:ems="10"
+            android:hint="Direccion"
+            android:inputType="textPersonName|textVisiblePassword"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtCuenta" />
+
+        <EditText
+            android:id="@+id/txtVendedor"
+            android:layout_width="wrap_content"
+            android:layout_height="41dp"
+            android:ems="10"
+            android:hint="Vendedor"
+            android:inputType="textPersonName"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtDireccion" />
+
+        <Button
+            android:id="@+id/btnGuardat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="148dp"
+            android:layout_marginLeft="148dp"
+            android:layout_marginEnd="148dp"
+            android:layout_marginRight="148dp"
+            android:text="Guardar"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtTelefono" />
+
+        <ListView
+            android:id="@+id/lstCliente"
+            android:layout_width="415dp"
+            android:layout_height="736dp"
+            android:layout_gravity="bottom"
+            android:dividerHeight="1dp"
+            android:longClickable="true"
+            android:textColor="#1abc25"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+        </ListView>
+
+    </android.support.constraint.ConstraintLayout>
+</FrameLayout>

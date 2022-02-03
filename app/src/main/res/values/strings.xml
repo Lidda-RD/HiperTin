@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Next Sales</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_carrito">Carrito</string>
+    <string name="title_activity_carrito_new">carrito_new</string>
+    <string name="title_home">Inicio</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_agregar__articulo">Agregar_Articulo</string>
+    <string name="title_activity_agregar_articulo">Agregar Articulo</string>
+    <string name="title_activity_cliente_activty">ClienteActivty</string>
+    <string name="title_activity_catef">Catef</string>
+    <string name="title_activity_categoria_de__productos">Categoria_de_Productos</string>
+    <string name="title_activity_cuentas_por__cobrar">Cuentas_por_Cobrar</string>
+</resources>

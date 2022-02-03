@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/agregar"
+        android:iconTintMode="@color/colorAccent"
+        android:icon="@drawable/add"
+        android:foregroundTint="@color/colorAccent"
+        android:title="Agregar" />
+
+    <item
+        android:id="@+id/cancelar"
+        android:icon="@drawable/additem"
+        android:title="Cancelar" />
+    <item
+        android:id="@+id/carrito"
+        android:icon="@drawable/additem"
+        android:title="Carrito" />
+
+
+</menu>

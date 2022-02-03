@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="15dp"
+    android:paddingBottom="15dp"
+    tools:context=".row_cliente">
+
+    <TextView
+        android:id="@+id/tvnombreCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_weight="1"
+        android:text="Nombre"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/tvcuentaCliente"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvcuentaCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Cuenta"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvdireccionCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_weight="1"
+        android:text="Direccion"
+        android:textColor="#3b3b3b"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvContacto" />
+
+    <TextView
+        android:id="@+id/tvlimiteCredito"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textColor="#3b3b3b"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvTelefono" />
+
+    <TextView
+        android:id="@+id/tvSectorCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textColor="#3b3b3b"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvnombreCliente" />
+
+    <TextView
+        android:id="@+id/tvBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/lato"
+        android:textColor="#008B00"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/tvTelefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Telefono"
+        android:textColor="#3b3b3b"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvdireccionCliente"
+        tools:text="Telefono" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:fontFamily="@font/lato"
+        android:text="Balance: "
+        android:textColor="#008B00"
+        android:textSize="12sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/tvBalance"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Limite Credito:"
+        android:textColor="#3b3b3b"
+        android:textSize="10sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/tvlimiteCredito"
+        app:layout_constraintTop_toTopOf="@+id/tvTelefono" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:text="Ciudad:"
+        android:textColor="#3b3b3b"
+        android:textSize="10sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/tvSectorCliente"
+        app:layout_constraintTop_toTopOf="@+id/tvnombreCliente" />
+
+    <TextView
+        android:id="@+id/tvvendedorCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:visibility="gone"
+        tools:layout_editor_absoluteX="78dp"
+        tools:layout_editor_absoluteY="30dp" />
+
+    <TextView
+        android:id="@+id/tvContacto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contacto"
+        android:textColor="@android:color/black"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvcuentaCliente" />
+
+    <TextView
+        android:id="@+id/tvdata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        tools:layout_editor_absoluteX="142dp"
+        tools:layout_editor_absoluteY="43dp" />
+</android.support.constraint.ConstraintLayout>

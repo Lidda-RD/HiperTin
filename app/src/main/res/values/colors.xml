@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#b5292a</color>-->
+    <!--<color name="colorPrimaryDark">#e2413e</color>-->
+    <!--<color name="colorAccent">#f15a2d</color>-->
+    <!--<color name="white">#FFFFFF</color>-->
+    <!--<color name="RedFlat">#EF4A4A</color>-->
+    <color name="colorPrimary">#202020</color>
+    <color name="colorPrimaryDark">#1A1A1A</color>
+        <color name="colorAccent">#C7A63F</color>
+    <color name="white">#FFFFFF</color>
+    <color name="TitleColor">#C7A63F</color>
+    <color name="RedFlat">#C7A63F</color>
+    <drawable name="actionbar_background">#FF0000</drawable>
+</resources>

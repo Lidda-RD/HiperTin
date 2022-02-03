@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.moisesvargas.hipertin">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".VariablesGlobal"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ejemplo"></activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Splash"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".row_cliente"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".row_pedido"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CarritoActivity"
+            android:label="@string/title_activity_carrito"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ClienteActivty"
+            android:label="@string/title_activity_cliente_activty"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".row_categoria"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".Popup"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Categoria_de_Productos"
+            android:label="@string/title_activity_categoria_de__productos"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Categoria_de_Productos" />
+        </activity>
+        <activity
+            android:name=".row_Producto"
+            android:screenOrientation="portrait" /> <!-- //<activity android:name=".CategoriaTinte"android:screenOrientation="portrait" /> -->
+        <activity
+            android:name=".Tinte"
+            android:parentActivityName=".Tinte"
+            android:screenOrientation="portrait">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Tinte" />
+        </activity>
+        <activity
+            android:name=".Linea"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Tinte" />
+        </activity>
+        <activity
+            android:name=".Producto"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Tinte" />
+        </activity>
+        <activity
+            android:name=".PopupSincronizacion"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FacturaPendiente"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ContextMenu_Cliente"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".Cuentas_por_Cobrar"
+            android:label="@string/title_activity_cuentas_por__cobrar"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>
